@@ -1,0 +1,5 @@
+#!/bin/bash
+# LPP Control Panel launcher
+cd /home/sra/Programming/LPP_linux
+source venv/bin/activate
+exec python src/lpp_tui.py "$@"

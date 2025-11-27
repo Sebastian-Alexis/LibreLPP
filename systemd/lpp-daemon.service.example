@@ -1,0 +1,17 @@
+# Example systemd service file - DO NOT USE DIRECTLY
+# Run install.sh to generate your personalized service file
+
+[Unit]
+Description=LPP Cooling System Daemon
+After=bluetooth.target
+
+[Service]
+Type=simple
+ExecStart=/path/to/LPP_linux/venv/bin/python /path/to/LPP_linux/src/lpp_daemon.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+Environment=LPP_MAC_ADDRESS=YOUR_DEVICE_MAC_ADDRESS
+
+[Install]
+WantedBy=default.target
