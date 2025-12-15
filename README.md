@@ -24,7 +24,7 @@ A Linux control panel for the Eluktronics LPP (Liquid Propulsion Package) coolin
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/LPP_linux.git
+git clone https://github.com/Sebastian-Alexis/LPP_linux.git
 cd LPP_linux
 ./install.sh
 ```
@@ -133,3 +133,4 @@ MIT License - see [LICENSE](LICENSE) file.
 
 - Reverse engineered from the Windows Eluktronics Control Center
 - Built with [Textual](https://textual.textualize.io/) and [Bleak](https://bleak.readthedocs.io/)
+
